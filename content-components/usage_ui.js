@@ -267,8 +267,6 @@ class UsageUI {
 		sectionsContainer.appendChild(this.usageSection.elements.container);
 		content.appendChild(sectionsContainer);
 
-		}
-
 		container.appendChild(header);
 		container.appendChild(content);
 
