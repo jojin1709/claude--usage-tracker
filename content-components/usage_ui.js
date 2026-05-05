@@ -267,11 +267,6 @@ class UsageUI {
 		sectionsContainer.appendChild(this.usageSection.elements.container);
 		content.appendChild(sectionsContainer);
 
-		// Add footers
-		const isElectron = await sendBackgroundMessage({ type: 'isElectron' });
-		if (!isElectron) {
-			const desktopFooter = this.createDesktopFooter();
-			content.appendChild(desktopFooter);
 		}
 
 		container.appendChild(header);
@@ -312,20 +307,6 @@ class UsageUI {
 		return header;
 	}
 
-	createDesktopFooter() {
-		const footer = document.createElement('div');
-		footer.className = 'ut-desktop-footer ut-sidebar-footer mt-1';
-
-		const link = document.createElement('a');
-		link.href = 'https://github.com/jojinjohn/claude-webext-patcher';
-		link.target = '_blank';
-		link.className = 'ut-link hover:text-text-200';
-		link.style.color = BLUE_HIGHLIGHT;
-		link.textContent = '💻 Claude Desktop version available';
-
-		footer.appendChild(link);
-		return footer;
-	}
 
 
 	createChatElements() {
