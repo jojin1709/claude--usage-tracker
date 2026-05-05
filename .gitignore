@@ -1,0 +1,42 @@
+# Browser Extension Files
+*.zip
+*.crx
+*.xpi
+*.pem
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Node (if used)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Build Artifacts
+dist/
+build/
+out/
+
+# Personal/Sensitive
+.env
+.env.local
+secret.txt
+debug_logs.json
